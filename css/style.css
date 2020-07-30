@@ -6,7 +6,7 @@
 body{
     font-family: 'Comic Neue', cursive;
 }
-
+/*----navbar----*/
 .nav-menu{
     padding: 25px;
 }
@@ -31,9 +31,40 @@ color: #634832;
 .navbar-toggler{
     outline: none!important;
 }
-
-
-
+/*-----header---*/
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.63),rgba(0,0,0,0.5)),
+     url(../img/1.jpg)no-repeat center center/cover;
+}
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+.heading{
+    animation-name: slide;
+    animation-duration: 2s;
+}
+.main{
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/*----about us----*/
 #about{
     background: #000;
     margin-top: 30px;
@@ -123,6 +154,7 @@ opacity: 0.5;
     transform: scaleX(1);
 }
 
+/*---tab section-----*/
 .content-4 .nav{
     justify-content: center;
     margin: 5%;
@@ -156,7 +188,7 @@ opacity: 0.5;
     margin-bottom: 5%;
     transition: all .4s ease;
 }
-
+/*---video section--*/
 .most-liked{
     position: relative;
     margin-top: 25px;
@@ -222,7 +254,7 @@ opacity: 0.5;
 .back-content .btn{
     color: #000;
 }
-
+/*----footer----*/
 footer{
     background: #000;
     padding-top: 2%;
